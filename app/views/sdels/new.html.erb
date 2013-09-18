@@ -1,0 +1,16 @@
+<%= link_to("Back to Sdel", {:action => 'list'}) %>
+
+<h2>Create Sdel</h2>
+
+<%= form_for(:sdel, :url => {:action => 'create'}) do |f| %>
+
+<table>
+	<tr>
+		<th>Sdel</th>
+		<td><%= f.text_field(:hashed_sdel) %></td>
+	</tr>
+</table>
+
+<%= submit_tag("Create SORD") %>
+
+<% end %>

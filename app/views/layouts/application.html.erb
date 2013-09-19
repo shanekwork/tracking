@@ -63,9 +63,15 @@
 	</div><!--middle-->
 </div><!--nav-->
 
-		<%= yield %>
+<% if !flash[:notice].blank? %>
+	<div class="alert">
 		<p class="notice"><%= notice %></p>
 		<p class="alert"><%= alert %></p>
+	</div><!--alert-->
+<% end %>
+
+		<%= yield %>
+
 	</div><!--container-->
 </div><!--middle-->
 

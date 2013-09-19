@@ -1,0 +1,26 @@
+<% if !flash[:notice].blank? %>
+<%= flash[:notice] %>
+<% end %>
+
+<h2>Sords</h2>
+
+<%= link_to("Add new SORD", {:action => 'new'}) %>
+
+<table>
+	<tr>
+		<th>Sord</th>
+		<th>User ID</th>
+		<th>Actions</th>
+	</tr>
+<% @sord.each do |s| %>
+	<tr>
+		<td><%= s.sord %></td>
+		<td><%= s.user_id %></td>
+		<td>
+			<%= link_to("Show", {:action => 'show', :id => s.id}) %>
+			<%= link_to("Edit", {:action => 'edit', :id => s.id}) %>
+			<%= link_to("Delete", {:action => 'delete', :id => s.id}) %>
+		</td>
+	</tr>
+	<% end %>
+</table>

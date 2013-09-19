@@ -11,3 +11,66 @@
  *= require_self
  *= require_tree .
  */
+ body {
+	margin: 0;
+	background: #d6d6d6;
+}
+
+h1, h2, h3 {
+	margin: 0;
+}
+
+.middle {
+	width: 1000px;
+	margin: 0 auto;
+	clear: both;
+}
+
+#header {
+	overflow: auto;
+	background: blue;
+}
+#header a {color: #fff;}
+#head1 {float: left; width: 300px; height: 140px; background: url(http://www.tradesupplyuk.eu/images/logonew.png) no-repeat center;}
+
+#head2 {float: left; width: 400px; height: 140px;}
+#head2Top {height: 80px; padding-top: 20px;}
+#head2Bottom {height: 60px;}
+#head2Top h1, h2 {text-align: center; color: #fff;}
+
+#head3 {float: left; width: 300px; height: 140px;}
+#head3Top {height: 80px; color: #fff;}
+#head3Bottom {height: 60px;}
+
+#nav {
+	background: #333;
+	overflow: auto;
+	border-radius: 5px;
+	margin: 0px 10px;
+}
+#nav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+#nav li {
+	float: left;
+}
+#nav a {
+	display: block;
+	padding: 10px 20px;
+	text-decoration: none;
+	color: #fff;
+}
+#nav a:hover {background: #999;}
+
+#container {
+	min-height: 500px;
+	background: #fff;
+	padding-top: 10px;
+}
+
+#footer {
+	height: 200px;
+	background: #858585;
+}

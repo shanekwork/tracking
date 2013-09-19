@@ -1,0 +1,22 @@
+<%= link_to("Back to SORD", {:action => 'list'}) %>
+
+<h2>Show SORD</h2>
+
+<table>
+<tr>
+	<th>SORD</th>
+	<td><%= @sord.sord %></td>
+</tr>	
+<tr>
+	<th>User ID</th>
+	<td><%= @sord.user_id %></td>
+</tr>
+<tr>
+	<th>Created</th>
+	<td><%= @sord.created_at %></td>
+</tr>
+<tr>
+	<th>Updated</th>
+	<td><%= @sord.updated_at %></td>
+</tr>
+</table>

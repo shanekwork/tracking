@@ -1,0 +1,20 @@
+<%= link_to("Back to SORD", {:action => 'list'}) %>
+
+<h2>Create SORD</h2>
+
+<%= form_for(:sord, :url => {:action => 'create'}) do |f| %>
+
+<table>
+	<tr>
+		<th>SORD</th>
+		<td><%= f.text_field(:sord) %></td>
+	</tr>
+	<tr>
+		<th>User ID</th>
+		<td><%= f.text_field(:user_id) %></td>
+	</tr>
+</table>
+
+<%= submit_tag("Create SORD") %>
+
+<% end %>

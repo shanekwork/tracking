@@ -1,0 +1,11 @@
+<%= link_to("Back to SORD", {:action => 'list'}) %>
+
+<h2>Delete SORD</h2>
+
+<%= form_for(:sord, :url => {:action => 'destroy', :id => @sord.id}) do |f| %>
+
+	<p>Are you sure you want to delete <%= @sord.sord %></p>
+
+	<%= submit_tag("Delete SORD") %>
+
+	<% end %>

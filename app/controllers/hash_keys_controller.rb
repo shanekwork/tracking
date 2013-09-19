@@ -1,0 +1,2 @@
+class HashKeysController < ApplicationController
+end

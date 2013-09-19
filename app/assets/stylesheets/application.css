@@ -69,6 +69,7 @@ h1, h2, h3 {
 	background: #fff;
 	padding-top: 10px;
 }
+#container h1, h2, h3 {color: #313131;}
 
 #footer {
 	height: 200px;

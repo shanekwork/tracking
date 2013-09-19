@@ -1,7 +1,8 @@
 Tracking::Application.routes.draw do
+  root :to => 'sords#index'
   devise_for :users
 
-  root :to => 'sords#index'
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

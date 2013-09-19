@@ -37,7 +37,7 @@ h1, h2, h3 {
 #head2 {float: left; width: 400px; height: 140px;}
 #head2Top {height: 80px; padding-top: 20px;}
 #head2Bottom {height: 60px;}
-/*#head2Top h1, h2 {text-align: center; color: #fff;}*/
+#head2Top h1, h2 {text-align: center; color: #fff !important;}
 
 #head3 {float: left; width: 300px; height: 140px;}
 #head3Top {height: 80px; color: #fff;}
@@ -45,9 +45,9 @@ h1, h2, h3 {
 
 #nav {
 	background: #333;
-	overflow: auto;
 	border-radius: 5px;
 	margin: 0px 10px;
+	overflow: auto;
 }
 #nav ul {
 	margin: 0;
@@ -59,7 +59,7 @@ h1, h2, h3 {
 }
 #nav a {
 	display: block;
-	padding: 10px 20px;
+	padding: 7px 20px;
 	text-decoration: none;
 	color: #fff;
 }
@@ -70,7 +70,7 @@ h1, h2, h3 {
 	background: #fff;
 	padding-top: 10px;
 }
-/*#container h1, h2, h3 {color: #313131;}*/
+.darkH {color: #313131 !important;}
 
 #footer {
 	height: 200px;

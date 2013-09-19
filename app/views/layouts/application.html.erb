@@ -43,13 +43,26 @@
 <div id="nav">
 	<div class="middle">
 		<ul>
-			<li><%= link_to("SORDS", :controller => 'sords', :action => 'list') %></li>
-			<li><%= link_to("SDELS", :controller => 'sdels', :action => 'list') %></li>
+			<li><%= link_to("Home", "http://www.tradesupplyuk.eu/") %></li>
+			<% if user_signed_in? %>
+			<li><%= link_to("Contracts", "http://www.tradesupplyuk.eu/home.aspx?page=OrderPads") %></li>
+			<li><%= link_to("Fast Order", "http://www.tradesupplyuk.eu/home.aspx?page=fastorder") %></li>
+			<li><%= link_to("Accounts", "http://www.tradesupplyuk.eu/home.aspx?page=Accounts") %></li>
+			<li><%= link_to("Authorise", "http://www.tradesupplyuk.eu/home.aspx?page=authorise") %></li>
+			<li><%= link_to("About", "http://www.tradesupplyuk.eu/home.aspx?page=About") %></li>
+			<li><%= link_to("Returns", "http://www.tradesupplyuk.eu/home.aspx?page=Returns") %></li>
+			<li><%= link_to("Sords", :controller => 'sords', :action => 'list') %></li>
+			<li><%= link_to("Sdels", :controller => 'sdels', :action => 'list') %></li>
+			<% else %>
+			<li><%= link_to("Create an Account", "http://www.tradesupplyuk.eu/home.aspx?page=CreateAccount") %></li>
+			<li><%= link_to("About", "http://www.tradesupplyuk.eu/home.aspx?page=About") %></li>
+			<li><%= link_to("Returns", "http://www.tradesupplyuk.eu/home.aspx?page=Returns") %></li>
 			<li></li>
+			<% end %>
 		</ul>
 	</div><!--middle-->
 </div><!--nav-->
-		
+
 		<%= yield %>
 		<p class="notice"><%= notice %></p>
 		<p class="alert"><%= alert %></p>

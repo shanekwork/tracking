@@ -36,7 +36,7 @@ h1, h2, h3 {
 #head2 {float: left; width: 400px; height: 140px;}
 #head2Top {height: 80px; padding-top: 20px;}
 #head2Bottom {height: 60px;}
-#head2Top h1, h2 {text-align: center; color: #fff;}
+/*#head2Top h1, h2 {text-align: center; color: #fff;}*/
 
 #head3 {float: left; width: 300px; height: 140px;}
 #head3Top {height: 80px; color: #fff;}
@@ -69,7 +69,7 @@ h1, h2, h3 {
 	background: #fff;
 	padding-top: 10px;
 }
-#container h1, h2, h3 {color: #313131;}
+/*#container h1, h2, h3 {color: #313131;}*/
 
 #footer {
 	height: 200px;

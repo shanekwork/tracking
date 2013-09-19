@@ -29,7 +29,7 @@ class SordsController < ApplicationController
 	end
 
 	def edit
-		@sort = Sord.find(params[:id])
+		@sord = Sord.find(params[:id])
 	end
 
 	def update

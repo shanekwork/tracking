@@ -1,16 +1,23 @@
 <h2>Sdels</h2>
 
+<%= link_to("Add new Sdel", {:action => 'new'}) %>
 
 <table>
 	
 	<tr>
 		<th>Sdels</th>
+		<th>Actions</th>
 	</tr>
 
 <% @sdel.each do |s| %>
 
 	<tr>
 		<td><%= s.hashed_sdel %></td>
+		<td>
+			<%= link_to("Show", {:action => 'show', :id => s.id}) %>
+			<%= link_to("Edit", {:action => 'edit', :id => s.id}) %>
+			<%= link_to("Delete", {:action => 'delete', :id => s.id}) %>
+		</td>
 	</tr>
 
 	<% end %>

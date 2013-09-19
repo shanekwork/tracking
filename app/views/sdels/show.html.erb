@@ -1,0 +1,18 @@
+<%= link_to("Back to SDEL", {:action => 'list'}) %>
+
+<h2>Show SDEL</h2>
+
+<table>
+<tr>
+	<th>SDEL</th>
+	<td><%= @sdel.hashed_sdel %></td>
+</tr>
+<tr>
+	<th>Created</th>
+	<td><%= @sdel.created_at %></td>
+</tr>
+<tr>
+	<th>Updated</th>
+	<td><%= @sdel.updated_at %></td>
+</tr>
+</table>

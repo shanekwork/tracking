@@ -1,0 +1,11 @@
+<%= link_to("Back to SDEL", {:action => 'list'}) %>
+
+<h2>Delete SDEL</h2>
+
+<%= form_for(:sdel, :url => {:action => 'destroy', :id => @sdel.id}) do |f| %>
+
+	<p>Are you sure you want to delete <%= @sdel.hashed_sdel %></p>
+
+	<%= submit_tag("Delete SDEL") %>
+
+	<% end %>
